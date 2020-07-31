@@ -19,11 +19,12 @@ rect.attr("width", 24)
     .data(dataArray)
     .attr("fill", "orange")
     .attr("height", function(d){
-      return d*2;
+      return d*3;
     })
-    // .attr('y', function (d, i) {
-    //                     return  d;
-    //         })
     .attr("x", function(d, i) {
-                                return i*25;});
+              return i*25;});
+    .attr('y', function (d, i) {
+              console.log(d);
+              return  100-(d*3);
+            })
 console.log(rect);
