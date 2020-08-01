@@ -22,9 +22,7 @@ rect.attr("width", 24)
       return d*3;
     })
     .attr("x", function(d, i) {
-              return i*25;});
-    .attr('y', function (d, i) {
-              console.log(d);
-              return  100-(d*3);
-            })
+              return i*25;})
+    .attr("y", function (d, i) {
+              return  100 -(d*3);});
 console.log(rect);
